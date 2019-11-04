@@ -47,3 +47,13 @@ function fruitFunction() {
         break;
     };
 };
+
+
+//----------------------
+// Part 2 of the challenge:
+
+var array2 = ["Banana",["Apples",["Oranges"],"Blueberries"]];
+
+console.log(array2);
+
+console.log(array2[1][1]);

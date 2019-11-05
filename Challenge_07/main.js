@@ -6,16 +6,15 @@ var btn = document.getElementById("btn");
 
 var i = -1;
 
-
 function fruitFunction() {
-    i++
+    i++;
     switch (i) {
         case 0:
             display.innerHTML = fruitsRA;
-            btn.innerHTML = "Remove 'Banana'";    
+            btn.innerHTML = "Remove 'Banana'";
         break;
         case 1:
-            fruitsRA.splice(0, 1);
+            fruitsRA.splice(fruitsRA.indexOf("Banana"), 1);
             display.innerHTML = fruitsRA;
             btn.innerHTML = "Order alphabetically"; 
         
@@ -33,7 +32,7 @@ function fruitFunction() {
         
         break;
         case 4:
-            fruitsRA.splice(0,1);
+            fruitsRA.splice(fruitsRA.indexOf("Apples"),1);
             display.innerHTML = fruitsRA;
             btn.innerHTML = "Reverse"; 
         
@@ -56,4 +55,4 @@ var array2 = ["Banana",["Apples",["Oranges"],"Blueberries"]];
 
 console.log(array2);
 
-console.log(array2[1][1]);
+console.log(array2[1][1][0]);
